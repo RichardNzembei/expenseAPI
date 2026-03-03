@@ -7,6 +7,7 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Expense {
 
     @Id
@@ -14,5 +15,10 @@ public class Expense {
     private Long id;
 
     private String title;
+
     private Double amount;
+
+    private String category;
+    @Column(nullable = true)
+    private String receiptPath;
 }
