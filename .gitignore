@@ -35,3 +35,5 @@ target/
 *.iml
 .vscode/
 .env
+# ignore generated Vaadin frontend files
+frontend/generated/
